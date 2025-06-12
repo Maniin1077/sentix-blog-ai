@@ -5,9 +5,8 @@ function analyzeSentiment() {
     return;
   }
 
-  // Basic JS sentiment words dictionary (simple version)
-  const positiveWords = ["love", "great", "happy", "awesome", "good", "wonderful", "fantastic", "excellent"];
-  const negativeWords = ["bad", "sad", "terrible", "horrible", "hate", "worst", "poor", "angry"];
+  const positiveWords = ["love", "great", "happy", "awesome", "good", "wonderful", "fantastic", "excellent", "beautiful"];
+  const negativeWords = ["bad", "sad", "terrible", "horrible", "hate", "worst", "poor", "angry", "ugly"];
 
   let score = 0;
   const words = input.toLowerCase().split(/\W+/);
@@ -18,10 +17,27 @@ function analyzeSentiment() {
   });
 
   let sentiment = "Neutral";
-  if (score > 0) sentiment = "Positive";
-  else if (score < 0) sentiment = "Negative";
+  let emoji = "😐";
 
-  document.getElementById("sentiment").innerText = sentiment;
-  document.getElementById("score").innerText = score;
-  document.getElementById("resultBox").classList.remove("hidden");
+  if (score > 0) {
+    sentiment = "Positive";
+    emoji = "😊";
+  } else if (score < 0) {
+    sentiment = "Negative";
+    emoji = "😞";
+  }
+
+  const resultBox = document.getElementById("resultBox");
+
+  const newResult = document.createElement("div");
+  newResult.classList.add("result-item");
+  newResult.innerHTML = `
+    <p><strong>📝 Input:</strong> ${input}</p>
+    <p><strong>📊 Sentiment:</strong> ${sentiment} ${emoji}</p>
+    <p><strong>🔢 Polarity Score:</strong> ${score}</p>
+    <hr/>
+  `;
+
+  resultBox.classList.remove("hidden");
+  resultBox.prepend(newResult); // Show newest result on top
 }
