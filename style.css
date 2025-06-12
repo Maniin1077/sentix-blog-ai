@@ -63,3 +63,7 @@ button:hover {
 .hidden {
   display: none;
 }
+
+canvas {
+  margin-top: 30px;
+}
