@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sentix Blog AI (JS Version)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sentix Blog AI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Sentix Blog AI</h1>
-    <p>Analyze the sentiment of your blog content below!</p>
-    <textarea id="blogInput" placeholder="Paste your blog content here..."></textarea>
+    <h1>🧠 Sentix Blog AI</h1>
+    <p class="subtitle">Instantly analyze your blog's emotions</p>
+
+    <textarea id="blogInput" placeholder="Enter your blog content here..."></textarea>
     <button onclick="analyzeSentiment()">Analyze</button>
-    <div id="resultBox" class="hidden">
-      <p><strong>Sentiment:</strong> <span id="sentiment"></span></p>
-      <p><strong>Polarity Score:</strong> <span id="score"></span></p>
-    </div>
+
+    <div id="resultBox" class="hidden"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
