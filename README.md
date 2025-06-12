@@ -1,17 +1,25 @@
 # 🌟 Sentix Blog AI (GitHub Pages Version)
 
-Sentix Blog AI is a simple client-side blog sentiment analyzer built using **HTML + CSS + JavaScript** so it runs perfectly on **GitHub Pages** without needing Flask or any backend.
+**Sentix Blog AI** is a lightweight, client-side blog sentiment analyzer built using **HTML, CSS, and JavaScript**, fully deployable on **GitHub Pages** with no backend or Flask required.
+
+---
 
 ## 🚀 Features
 
-- Detects Positive, Negative, or Neutral sentiment
-- Uses a basic JavaScript sentiment model
-- Clean, responsive UI
-- 100% deployable on GitHub Pages ✅
+- 🧠 Detects **Positive**, **Negative**, **Neutral**, and **Mixed** sentiments
+- 😊 Emoji-based feedback for better emotional clarity
+- 📊 Live **bar chart** visualization using Chart.js
+- 📝 Keeps a **history** of analyzed inputs
+- 📱 Fully responsive, clean, and simple UI
+- ⚡ 100% static site — **works without any backend**
 
-## 🖥️ Demo
+---
 
-> [Click here to try it out](https://Maniin1077.github.io/sentix-blog-ai)
+## 🔗 Live Demo
 
-## 📁 Folder Structure
+👉 [Click here to try it out](https://maniin1077.github.io/sentix-blog-ai)
+
+---
+
+## 📂 Folder Structure
 
